@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 return {
 	color_scheme = "Catppuccin Mocha",
-	use_fancy_tab_bar = true,
+	use_fancy_tab_bar = false,
 	check_for_updates = false,
 	disable_default_keybindings = true,
 	leader = {
@@ -41,8 +41,12 @@ return {
 		{ key = "&", mods = "LEADER|SHIFT", action = wezterm.action({ CloseCurrentTab = { confirm = true } }) },
 		{ key = "x", mods = "LEADER", action = wezterm.action({ CloseCurrentPane = { confirm = true } }) },
 
-		{ key = "n", mods = "SHIFT|CTRL", action = "ToggleFullScreen" },
+		{ key = "f", mods = "LEADER", action = "ToggleFullScreen" },
 		{ key = "v", mods = "SHIFT|CTRL", action = "Paste" },
 		{ key = "c", mods = "SHIFT|CTRL", action = "Copy" },
+	},
+	inactive_pane_hsb = {
+		saturation = 0.5,
+		brightness = 0.3,
 	},
 }
