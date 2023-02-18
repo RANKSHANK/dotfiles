@@ -1,6 +1,7 @@
 #!/usr/bin/env lua
 
 local targets = {
+	".gitignore",
 	"git_add.lua", -- This script gets VC'd
 	".config/nvim/init.lua",
 	".config/nvim/lua",
@@ -8,6 +9,7 @@ local targets = {
 	".config/wezterm",
 	".config/kitty",
 	".config/alacritty",
+	".config/paru",
 }
 
 for _, target in ipairs(targets) do
