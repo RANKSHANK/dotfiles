@@ -58,7 +58,7 @@ return {
 			}),
 			desc = "Goto Symbol",
 		},
-		{ "<leader>su", "<CMD>Telescope undo<CR>", desc = "Undo tree" },
+		{ "<leader>su", "<CMD>Telescope undo<CR>", desc = "Undo Tree" },
 	},
 	opts = {
 		defaults = {
@@ -107,9 +107,9 @@ return {
 					},
 					mappings = {
 						i = {
-							["<CR>"] = require("telescope.undo.actions").yank_additions,
-							["<S-CR>"] = require("telescope.undo.actions").yank_deletions,
-							["<C-CR>"] = require("telescope.undo.actions").restore,
+							["<CR>"] = require("telescope-undo.actions").yank_additions,
+							["<S-CR>"] = require("telescope-undo.actions").yank_deletions,
+							["<C-CR>"] = require("telescope-undo.actions").restore,
 						},
 					},
 				},

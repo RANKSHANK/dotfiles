@@ -35,4 +35,8 @@ require("lazy").setup({
 		priority = 1,
 		import = "plugins",
 	},
+    {
+        priority = 0,
+        import = "plugins.filetype",
+    },
 })

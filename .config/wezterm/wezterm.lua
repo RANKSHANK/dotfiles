@@ -5,6 +5,7 @@ return {
 	use_fancy_tab_bar = false,
 	check_for_updates = false,
 	disable_default_keybindings = true,
+	hide_tab_bar_if_only_one_tab = true,
 	leader = {
 		key = " ",
 		mods = "WIN",
