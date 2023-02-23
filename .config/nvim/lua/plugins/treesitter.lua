@@ -23,6 +23,7 @@ return {
 			"gdscript",
 			"help",
 			"html",
+            "java",
 			"javascript",
 			"json",
 			"json5",

@@ -7,7 +7,7 @@ return {
 	cmd = "Telescope",
 	version = false, -- telescope did only one release, so use HEAD for now
 	keys = {
-		{ "<leader>,", "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
+		{ "<leader>,", "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },    
 		{ "<leader>/", require("lazyvim.util").telescope("live_grep"), desc = "Find in Files (Grep)" },
 		{ "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
 		{ "<leader><space>", require("lazyvim.util").telescope("files"), desc = "Find Files (root dir)" },
