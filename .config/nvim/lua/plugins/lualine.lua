@@ -68,7 +68,16 @@ return {
 						},
 					},
 				},
-				lualine_c = {},
+				lualine_c = {
+                    {
+                        function()
+                            return require("nvim-navic").get_location()
+                        end,
+                        cond = function()
+                            return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
+                        end,
+                    }
+                },
 				lualine_x = {
 					{
 						function()
@@ -79,7 +88,6 @@ return {
 						end,
 						color = fg("Statement"),
 					},
-                    -- stylua: ignore
                     {
                         function() return require("noice").api.status.mode.get() end,
                         cond = function() return package.loaded["noice"] and require("noice").api.status.mode.has() end,

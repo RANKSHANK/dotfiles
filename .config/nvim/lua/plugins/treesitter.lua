@@ -4,13 +4,20 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	keys = {
 		{ "<c-space>", desc = "Increment selection" },
-		{ "<bs>", desc = "Schrink selection", mode = "x" },
-		--    { "<leader>pf", require("telescope").find_files, desc = "Find Project Files" },
+		{ "<bs>", desc = "Shrink selection", mode = "x" },
+		{ "<leader>pf", require("telescope").find_files, desc = "Find Project Files" },
 	},
 	opts = {
-		highlight = { enable = true },
-		indent = { enable = true },
-		context_commentstring = { enable = true, enable_autocmd = false },
+		highlight = {
+            enable = true,
+        },
+		indent = {
+            enable = true,
+        },
+		context_commentstring = {
+            enable = true,
+            enable_autocmd = false,
+        },
 		ensure_installed = {
 			"bibtex",
 			"c",
@@ -21,6 +28,7 @@ return {
 			"bash",
 			"fish",
 			"gdscript",
+            "glsl",
 			"help",
 			"html",
             "java",
@@ -40,6 +48,7 @@ return {
 			"tsx",
 			"typescript",
 			"vim",
+            "wgsl",
 			"yaml",
 		},
 		incremental_selection = {

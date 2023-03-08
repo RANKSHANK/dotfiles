@@ -7,7 +7,7 @@ return {
 			flavour = "mocha",
 			dim_inactive = {
 				enabled = true,
-				percentage = 0.25,
+				percentage = 0.35,
 			},
 			integrations = {
 				notify = true,

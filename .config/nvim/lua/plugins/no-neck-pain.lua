@@ -6,4 +6,16 @@ return {
 		{ "<leader>uck", "<CMD>NoNeckPainWidthUp<CR>", desc = "Increase Centered Editor Width" },
 		{ "<leader>ucj", "<CMD>NoNeckPainWidthDown<CR>", desc = "Decrease Centered Editor Width" },
 	},
+    opts = {
+        buffers = {
+            blend = -0.3,
+            scratchPad = {
+                enabled = true,
+                location = "~/Documents/scratch/",
+            },
+            bo = {
+                filetype = "md"
+            }
+        }
+    }
 }
